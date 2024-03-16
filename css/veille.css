@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.bodyveille {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../img/main.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    backdrop-filter: blur(3px);
+   
+}
+
+main h1 {
+    
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0px 0px 0px 92px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    
+    text-decoration: none;
+    font-weight: bold;
+
+    background: -webkit-linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Pour les navigateurs non-WebKit si background-clip est supporté */
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .articles {
+        grid-template-columns: 1fr;
+    }
+}
+
+.veille-technologique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: auto; /* Set height to auto to accommodate content */
+    border-radius: 20px;
+    padding: 20px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 30px auto; /* Center horizontally */
+    backdrop-filter: blur(8px);
+    width: 90%; /* Use percentage to be responsive */
+    max-width: 900px; /* Max-width to ensure it does not stretch too wide on larger screens */
+}
+
+/* Adjustments when the screen size is smaller */
+@media (max-width: 900px) {
+    .veille-technologique {
+        width: 95%; /* Increase width percentage on smaller screens for better use of space */
+        margin: 30px auto; /* Adjust margin to keep it centered */
+        padding: 20px; /* Maintain padding */
+    }
+}
+
+@media (max-width: 600px) {
+    .veille-technologique {
+        width: 100%; /* Make the width 100% on very small screens */
+        margin-top: 30px; /* Adjust top margin */
+        margin-bottom: 30px; /* Adjust bottom margin */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+
+.veille-technologique h2, .veille-technologique h3 {
+    font-weight: 700; 
+    margin-bottom: 10px; 
+}
+
+.veille-technologique p, .veille-technologique ul {
+    font-weight: 400; /* Texte normal pour le contenu */
+    line-height: 1.6; /* Espacement entre les lignes */
+}
+
+.veille-technologique ul {
+    padding-left: 20px; /* Indentation pour les listes */
+}
+
+.veille-technologique li {
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+}
+
+/* Ajustements responsifs pour la veille technologique */
+@media (max-width: 900px) {
+    .veille-technologique {
+        margin: 20px 10px; /* Ajustement des marges pour les écrans plus petits */
+    }
+}
+.section-header {
+    position: relative;
+    margin-bottom: -45px;
+    margin-top: 50px;
+    margin-left: auto; /* Center the section header */
+    margin-right: auto; /* Center the section header */
+    color: white;
+    font-size: 25px;
+    max-width: 900px; /* Set a max-width for large screens */
+    width: 90%; /* Set width to a percentage of the screen size */
+    text-align: center; /* Center align the text */
+}
+
+/* Adjustments for smaller screens using media queries */
+@media (max-width: 900px) {
+    .section-header {
+        margin-left: 20px; /* Add some margin on smaller screens */
+        margin-right: 20px; /* Add some margin on smaller screens */
+        width: auto; /* Let the header take the necessary width */
+    }
+}
+
+@media (max-width: 600px) {
+    .section-header {
+        margin-top: 30px; /* Adjust the top margin for very small screens */
+        font-size: 20px; /* Decrease the font size for better readability */
+    }
+}
+
+
+.section-header p {
+    display: inline-block;
+    margin: 0 120px;
+    margin-bottom: 80px;
+    margin-top:-65px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.section-header p::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: 0;
+    left: -30px;
+   
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    
+    z-index: -1;
+}
+
+.section-header p::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 11px;
+    left: 3px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    z-index: 1;
+}
+
+.section-header h2 {
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px; /* Increase font size for smaller screens */
+    }
+
+    .section-header {
+        margin-left: 0; /* Reset left margin for smaller screens */
+        text-align: center; /* Center align on smaller screens */
+    }
+
+    .section-header p {
+        margin: 10px auto; /* Center block on smaller screens */
+        position: static; /* Disable absolute positioning on smaller screens */
+    }
+}
+
+/* Responsive adjustments for veille technologique section */
+@media (max-width: 900px) {
+    .veille-technologique {
+        margin: 20px; /* Adjust margins for smaller screens */
+    }
+}

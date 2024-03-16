@@ -1,0 +1,127 @@
+/*Style pour le main de index*/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   color: white;
+}
+
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.maintitre {
+    margin-bottom: 20vh;
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+    padding:20px
+}
+
+.maintitre h1 {
+    margin-bottom: 3vh;
+}
+
+.mainbloc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    
+
+}
+
+#G1 {
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+}
+
+#G2 {
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+}
+
+#G3 {
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+}
+
+#G4 {
+    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0 0 0.75rem #24004b);
+}
+
+.mainbloc div {
+    justify-content: space-between;
+}
+
+.grille {
+    width: calc(25% - 20px);
+   
+}
+.grille h2 {
+    padding-bottom: 10px;
+}
+.grille p {
+    padding-bottom: 10px;
+    
+}
+.button-Grille{
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    padding: 0.81rem 2rem;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.button-Grille:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+    transform: scale(1.05); /* Léger agrandissement au survol */
+}
