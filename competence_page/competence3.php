@@ -1,81 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E4 Portfolio </title>
-    <link rel="icon" href="./img/logo.png">
-    <link rel="stylesheet" href="../css/navfooter.css">
-    <link rel="stylesheet" href="../css/competences.css">
+    <title>Compétence 3</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            /* Ajout pour organiser les éléments en colonne */
+        }
+
+        #pdf-container {
+            width: 90%;
+            height: 90%;
+        }
+
+        .home-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-Grille {
+            color: white;
+            cursor: pointer;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            border: none;
+            color: white;
+            padding: 0.81rem 2rem;
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
-<body class="bodycompetences">
-    <nav>
-        <a href="../competences.php" class="home-button">Retour à l'accueil</a>
-    </nav>
-    <main class="articles">
-
-        <!-- <h1>Blog sur les Dernières Technologies</h1> -->
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Devin ai</h3>
-            <p>https://medium.com/@sufianmustafa0900/devin-ai-the-worlds-first-ai-software-engineer-1b4c5318bb00
-                https://iaweb.fr/ia/programmation/devin-ai/
-            </p>
-            <a href="#">Lire la suite</a>
-        </article>
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Titre de l'Article 1</h3>
-            <p>Description courte de l'article 1.</p>
-            <a href="#">Lire la suite</a>
-        </article>
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Titre de l'Article 1</h3>
-            <p>Description courte de l'article 1.</p>
-            <a href="#">Lire la suite</a>
-        </article>
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Titre de l'Article 1</h3>
-            <p>Description courte de l'article 1.</p>
-            <a href="#">Lire la suite</a>
-        </article>
-        <!-- Répétez les balises <article> pour plus d'articles -->
-        <!-- <h1>Blog sur les Dernières Technologies</h1> -->
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Titre de l'Article 1</h3>
-            <p>Description courte de l'article 1.</p>
-            <a href="#">Lire la suite</a>
-        </article>
-        <article class="card">
-            <img src="./img/blog-1.jpg" alt="Article Image 1">
-            <h3>Titre de l'Article 1</h3>
-            <p>Description courte de l'article 1.</p>
-            <a href="#">Lire la suite</a>
-        </article>
-
-    </main>
-    <footer>
-        <?php include("../include/footer.php") ?>
-    </footer>
-
-    <script>
-        // Attend que la page soit complètement chargée avant d'exécuter le code
-        document.addEventListener('DOMContentLoaded', function() {
-            // Récupère l'élément div que vous souhaitez cacher
-            var elementToHide = document.querySelector('div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"]');
-
-            // Vérifie si l'élément existe avant de tenter de le cacher
-            if (elementToHide) {
-                // Cache l'élément en modifiant son style
-                elementToHide.style.display = "none";
-            }
-        });
-    </script>
+<body>
+    <div id="pdf-container">
+        <embed src="../pdf/Competence/Competence_3/Competence_3.pdf" type="application/pdf" width="100%" height="100%">
+    </div>
+    <!-- Bouton de retour à l'accueil -->
+    <a href="../../../competences.php" class="home-button">Retour</a>
 </body>
+
 
 </html>

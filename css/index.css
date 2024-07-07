@@ -27,14 +27,27 @@ main a {
     filter: drop-shadow(0 0 0.75rem #24004b);
     padding:20px
 }
-
+@media (max-width: 900px) {
+    .maintitre{
+        margin: 0 5vw 5vh 5vw;
+        min-width: 50vw;
+        min-height: 19vh;
+    }
+}
 .maintitre h1 {
     margin-bottom: 3vh;
+}
+@media (max-width: 768px) {
+    .mainbloc {
+       flex-direction: column;
+        margin: 0;
+    }
 }
 
 .mainbloc {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 20px;
     
 
@@ -51,6 +64,8 @@ main a {
     padding-bottom: 20px;
     filter: drop-shadow(0 0 0.75rem #24004b);
 }
+
+
 
 #G2 {
     background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
@@ -97,6 +112,15 @@ main a {
     width: calc(25% - 20px);
    
 }
+
+@media (max-width: 900px) {
+    .grille{
+        margin: 0 5vw 5vh 5vw;
+        min-width: 91vw;
+        min-height: 15vh;
+    }
+}
+
 .grille h2 {
     padding-bottom: 10px;
 }
@@ -121,7 +145,18 @@ main a {
     
 }
 
+@media (max-width: 900px) {
+    .button-Grille{
+        flex-direction: column; /* Les éléments s'afficheront en colonne */
+        align-items: center; 
+        font-size: 5vw;
+    min-height: 3.5vh;
+}
+    }
+
+
 .button-Grille:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
     transform: scale(1.05); /* Léger agrandissement au survol */
 }
+

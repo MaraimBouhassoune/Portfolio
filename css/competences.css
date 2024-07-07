@@ -21,14 +21,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 142px;
+    margin-top: 25px;
 }
 .competence {
     text-align: center;
     margin: 20px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(255 73 249 / 100%);
     border-radius: 8px;
 }
 .competence h2 {
@@ -253,3 +253,5 @@ main h1 {
         grid-template-columns: 1fr;
     }
 }
+
+

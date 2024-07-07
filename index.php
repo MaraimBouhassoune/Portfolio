@@ -12,7 +12,7 @@
 
 <body class="bodyindex">
     <nav>
-        <?php include("./include/nav.php.") ?>
+        <?php include("./include/nav.php") ?>
     </nav>
 
     <main>
@@ -26,7 +26,7 @@
         </div>
         <div class="mainbloc" id="bloc">
             <div class="grille" id="G1">
-                <h2>A Propos de moi</h2>
+                <h2>Mon CV</h2>
                 <p>Consulter  <br>mon cv.</p>
                 <a class="button-Grille" href="./pages/cv.php" >Consulter</a>
 
@@ -39,7 +39,7 @@
             <div class="grille" id="G3">
                 <h2>Livraison E4</h2>
                 <p>Télécharger les rapports d'activités accompagnés du Tableau de Synthèse.</p>
-                <a class="button-Grille" href="">Télécharger</a>
+                <a class="button-Grille" href="./pdf/Livraison_E4.zip">Télécharger</a>
             </div>
             <div class="grille" id="G4">
                 <h2>Veille Technologique</h2>
@@ -51,19 +51,7 @@
     <footer>
         <?php include("./include/footer.php") ?>
     </footer>
-    <script>
-    // Attend que la page soit complètement chargée avant d'exécuter le code
-    document.addEventListener('DOMContentLoaded', function() {
-        // Récupère l'élément div que vous souhaitez cacher
-        var elementToHide = document.querySelector('div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"]');
 
-        // Vérifie si l'élément existe avant de tenter de le cacher
-        if (elementToHide) {
-            // Cache l'élément en modifiant son style
-            elementToHide.style.display = "none";
-        }
-    });
-</script>
 </body>
 
 </html>

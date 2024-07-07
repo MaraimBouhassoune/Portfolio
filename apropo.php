@@ -13,7 +13,7 @@
 
 <body class="bodyapropo">
     <nav>
-        <?php include("./include/nav.php.") ?>
+        <?php include("./include/nav.php") ?>
     </nav>
     <main>
         <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
@@ -24,6 +24,9 @@
             <p style="margin-bottom: 10vh; background: linear-gradient(to right, #6a11cb 0%, #584D66 100%); height: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; filter: drop-shadow(0 0 0.75rem #24004b); padding: 20px; margin:20px; ">
                 Après l’obtention de mon BTS SIO SLAM - BAC+2 je souhaiterais poursuivre mon cursus en suivant la formation BACHELOR Ingenieur web - BAC+3 en alternance , puis par la suite mon objectif est de continuer vers un diplome - BAC+5 dans cette formation.
                 L'ensemble de cette formation est dispensé à l'école ESGI à Paris.
+                <br><br>
+                <a class="btn" href="https://www.esgi.fr/" target="_blank">Site école ESGI   <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+
             </p>
         </div>
         <div class="experience" id="experience">
@@ -40,10 +43,12 @@
                             <h2>Apprentie Développeur Web <br> Full Stack</h2>
                             <h4>Ambient It, Pantin</h4>
                             <p>
-                                -Programmation, développement et mise à jour du backend et frontend du site d'Ambient IT.<br><br>
+                                -Développer des nouvelles solutions et améliorer celles déjà existantes pour
+                                répondre aux besoins fonctionnels.<br><br>
                                 -Création d'outils d'automatisation (devis, factures, informations réglementaires des entreprises...).<br><br>
                                 -Veille sur l'évolution des langages utilisés (JavaScript, PHP...).<br><br>
                                 -Mise à jour et gestion des ordinateurs utilisable lors de formations.<br><br>
+                                -Identifié et corrigé les bugs pour améliorer la performance du site<br><br>
                             </p>
                             <p>
                                 <a class="btn" href="https://www.ambient-it.net/" target="_blank">Site entreprise   <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
@@ -109,19 +114,6 @@
         <?php include("./include/footer.php") ?>
     </footer>
 
-    <script>
-    // Attend que la page soit complètement chargée avant d'exécuter le code
-    document.addEventListener('DOMContentLoaded', function() {
-        // Récupère l'élément div que vous souhaitez cacher
-        var elementToHide = document.querySelector('div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"]');
-
-        // Vérifie si l'élément existe avant de tenter de le cacher
-        if (elementToHide) {
-            // Cache l'élément en modifiant son style
-            elementToHide.style.display = "none";
-        }
-    });
-</script>
 </body>
 
 

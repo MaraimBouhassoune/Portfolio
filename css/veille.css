@@ -99,12 +99,16 @@ main h1 {
     align-items: center;
     flex-wrap: wrap;
     color: white;
-    background: linear-gradient(to right, #6a11cb 0%, #584D66 100%);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgb(255 73 249 / 100%);
+    border-radius: 8px;
     height: auto; /* Set height to auto to accommodate content */
     border-radius: 20px;
     padding: 20px;
     filter: drop-shadow(0 0 0.75rem #24004b);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 30px auto; /* Center horizontally */
     backdrop-filter: blur(8px);
@@ -134,19 +138,23 @@ main h1 {
 .veille-technologique h2, .veille-technologique h3 {
     font-weight: 700; 
     margin-bottom: 10px; 
+    font-family: "Roboto", sans-serif;
 }
 
 .veille-technologique p, .veille-technologique ul {
     font-weight: 400; /* Texte normal pour le contenu */
     line-height: 1.6; /* Espacement entre les lignes */
+    font-family: "Roboto", sans-serif;
 }
 
 .veille-technologique ul {
     padding-left: 20px; /* Indentation pour les listes */
+    font-family: "Roboto", sans-serif;
 }
 
 .veille-technologique li {
     margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+    font-family: "Roboto", sans-serif;
 }
 
 /* Ajustements responsifs pour la veille technologique */
@@ -222,6 +230,28 @@ main h1 {
     background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     z-index: 1;
 }
+@media (max-width: 768px) {
+    .section-header p {
+        margin: 0 10px; /* Réduction de la marge pour les petits écrans */
+        margin-bottom: 50px; /* Ajustement de la marge inférieure */
+        margin-top: 0; /* Suppression de la marge négative */
+        padding-left: 10px; /* Ajustement du padding */
+        font-size: 14px; /* Réduction de la taille de la police */
+    }
+
+    .section-header p::before, .section-header p::after {
+        display: none; /* Optionnel: masquer les traits sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header p {
+        margin: 0 5px; /* Marge réduite encore plus pour les très petits écrans */
+        padding-left: 5px; /* Padding réduit */
+        font-size: 12px; /* Taille de la police encore plus petite */
+    }
+}
+
 
 .section-header h2 {
     font-weight: bold;
@@ -255,6 +285,141 @@ main h1 {
 /* Responsive adjustments for veille technologique section */
 @media (max-width: 900px) {
     .veille-technologique {
-        margin: 20px; /* Adjust margins for smaller screens */
+        margin: 0px; /* Adjust margins for smaller screens */
+    }
+}
+
+.visualiser {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none; /* Enlève le soulignement du texte */
+    cursor: pointer; /* Change le curseur pour indiquer la possibilité de cliquer */
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Arrière-plan en dégradé */
+    border: none; /* Supprime la bordure */
+    color: white; /* Texte en blanc */
+    padding: 0.81rem 2rem; /* Ajuste le padding pour espacer le texte */
+    display: inline-block; /* Permet au lien de se comporter comme un bloc inline pour l'espacement */
+    font-size: 15px; /* Taille de la police */
+    border-radius: 50px; /* Arrondit les coins */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation pour les transformations et l'ombre */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    font-weight: 600; /* Poids de la police */
+    text-align: center; /* Alignement du texte */
+    margin-top: 35px;
+}
+
+.visualiser:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol pour un effet de profondeur */
+    transform: scale(1.05); /* Agrandit légèrement l'élément au survol pour une interaction visuelle */
+}
+
+
+body #BackgroundBlock {
+    flex: 2 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    padding: 5vh 7vh 5vh 10vh;
+    width: 70%;
+    border-radius: 45px;
+    background-color: rgba(145, 89, 204, 0.77);
+}
+
+body .textshadow {
+    text-shadow: 1px 1px 2px #c56b4b, 0 0 2em #619284, 0 0 1em #619284;
+}
+
+body .title {
+    padding-bottom: 3vh;
+    font-size: 4.5vh;
+    text-align: center;
+}
+
+body .themeblock {
+    display: flex;
+    justify-content: center;
+}
+
+
+body .linkblock {
+    width: 20vw;
+    padding: 2.5vw;
+    margin: 0 3vw 7vh 0;
+}
+body .linkblock:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol pour un effet de profondeur */
+    transform: scale(1.05);
+    border-radius: 38px;
+}
+
+body .linkblock img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    width: 90%;
+    object-fit: contain;
+    border-radius: 2vw;
+}
+body .sourcename {
+    color: black;
+    font-size: 1.5vw;
+    text-justify: inter-character;
+}
+
+body .sourcename span {
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #c56b4b, 0 0 2em #c56b4b, 0 0 1em #c56b4b;
+}
+a {
+    text-decoration: none;
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 1200px) and (min-width: 901px) {
+    .veille-technologique {
+        width: 95%;
+        padding: 20px; /* Ajuste le padding pour un meilleur usage de l'espace */
+    }
+
+    .section-header {
+        margin: 0 auto; /* Ajuste la marge pour un meilleur centrage */
+        padding: 15px;
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for medium screens */
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+
+body .textshadow {
+    font-size: 4.5vh; /* taille initiale adaptée aux écrans plus grands */
+}
+
+@media (max-width: 1200px) {
+    body .textshadow{
+        font-size: 3.5vh; /* légèrement plus petit pour les écrans intermédiaires */
+    }
+}
+
+@media (max-width: 768px) {
+    body .textshadow{
+        font-size: 3vh; /* encore plus petit pour les tablettes */
+    }
+}
+
+@media (max-width: 600px) {
+    body .textshadow{
+        font-size: 2.5vh; /* adapté aux mobiles */
     }
 }

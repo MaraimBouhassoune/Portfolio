@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
+    <title>Certificat Alternance</title>
     <style>
         body {
             background-color: black;
@@ -57,7 +57,7 @@
 
 <body>
     <div id="pdf-container">
-        <embed src="../pdf/Cv_MariamBouhassoune.pdf" type="application/pdf" width="100%" height="100%">
+        <embed src="../pdf/Certificat_alternance.pdf" type="application/pdf" width="100%" height="100%">
     </div>
     <!-- Bouton de retour à l'accueil -->
     <a href="../apropo.php" class="home-button">Retour</a>

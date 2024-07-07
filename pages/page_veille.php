@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétence 5</title>
+    <title>LA VEILLE TECHNOLOGIQUE</title>
     <style>
         body {
             background-color: black;
@@ -56,11 +57,10 @@
 
 <body>
     <div id="pdf-container">
-        <embed src="../pdf/Competence/Competence_5/Competence_5.pdf" type="application/pdf" width="100%" height="100%">
+        <embed src="../pdf/veille.pdf" type="application/pdf" width="100%" height="100%">
     </div>
     <!-- Bouton de retour à l'accueil -->
-    <a href="../../../competences.php" class="home-button">Retour</a>
+    <a href="../veille.php" class="home-button">Retour</a>
 </body>
-
 
 </html>

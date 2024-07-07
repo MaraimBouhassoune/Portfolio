@@ -69,6 +69,10 @@ nav ul li a:hover, nav li a:hover {
         margin-right: 0; /* Ajustement de la marge */
         margin-bottom: 10px; /* Espacement entre les éléments */
     }
+    footer{
+        flex-direction: column; /* Les éléments s'afficheront en colonne */
+        align-items: center; 
+    }
 }
 
 
@@ -120,3 +124,4 @@ footer ul li a svg{
 footer ul li a:hover svg{
     transform: scale(1.5);
 }
+

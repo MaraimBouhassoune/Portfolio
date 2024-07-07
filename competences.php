@@ -12,64 +12,32 @@
 
 <body class="bodycompetences">
     <nav>
-        <?php include("./include/nav.php.") ?>
+        <?php include("./include/nav.php") ?>
     </nav>
     <main>
-        
-        <div class="competence-container">
-            <?php
-            // Tableau des compétences
-            $competences = array("Compétence 1", "Compétence 2", "Compétence 3", "Compétence 4", "Compétence 5", "Compétence 6");
+        <!-- Div for each group of three competences -->
+        <?php
+        $competences = array("Compétence 1", "Compétence 2", "Compétence 3", "Compétence 4", "Compétence 5", "Compétence 6","Rapport Stage","Rapport Alternance","Rapport Projet","Rapport Site Portfolio");
+        $total_competences = count($competences);
 
-            // Afficher les 3 premières compétences
-            for ($i = 0; $i < 3; $i++) {
+        // Process every three competences
+        for ($j = 0; $j < $total_competences; $j += 3) {
+            echo "<div class='competence-container'>";
+            for ($i = $j; $i < $j + 3 && $i < $total_competences; $i++) {
                 echo "<div class='competence'>";
                 echo "<h2 style='color: white;'>{$competences[$i]}</h2>";
                 echo "<a href='competence_page/competence" . ($i + 1) . ".php' class='visualiser'>Visualiser</a>";
                 echo "</div>";
             }
-            ?>
-        </div>
-
-        <div class="competence-container">
-            <?php
-            // Afficher les 3 compétences restantes
-            for ($i = 3; $i < 6; $i++) {
-                echo "<div class='competence'>";
-                echo "<h2 style='color: white;'>{$competences[$i]}</h2>";
-                echo "<a href='competence_page/competence" . ($i + 1) . ".php' class='visualiser'>Visualiser</a>";
-                echo "</div>";
-            }
-            ?>
-        </div>
+            echo "</div>";
+        }
+        ?>
     </main>
 
     <footer>
         <?php include("./include/footer.php") ?>
     </footer>
-    <script>
-    // Récupère l'élément div que vous souhaitez cacher
-    var elementToHide = document.querySelector('div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"]');
 
-    // Vérifie si l'élément existe avant de tenter de le cacher
-    if (elementToHide) {
-        // Cache l'élément en modifiant son style
-        elementToHide.style.display = "none";
-    }
-</script>
-<script>
-    // Attend que la page soit complètement chargée avant d'exécuter le code
-    document.addEventListener('DOMContentLoaded', function() {
-        // Récupère l'élément div que vous souhaitez cacher
-        var elementToHide = document.querySelector('div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"]');
-
-        // Vérifie si l'élément existe avant de tenter de le cacher
-        if (elementToHide) {
-            // Cache l'élément en modifiant son style
-            elementToHide.style.display = "none";
-        }
-    });
-</script>
 </body>
 
 </html>

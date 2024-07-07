@@ -225,6 +225,13 @@ a:focus {
     height: 100%;
     margin-bottom:84px;
 }
+@media (max-width: 900px) {
+    .experience {
+        margin: 0 5vw 5vh 5vw;
+        min-width: 50vw;
+        min-height: 46vh;
+    }
+}
 
 .experience .timeline::after {
     content: '';
